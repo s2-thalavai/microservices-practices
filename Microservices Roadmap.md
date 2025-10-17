@@ -17,7 +17,6 @@ Understand the principles of microservice architecture and Azure components.
 ### Tools:
 VS Code / IntelliJ, Docker Desktop, Azure CLI, Functions Core Tools, Postman.
 
----
 
 ## Phase 1 — Core Microservice Setup
 
@@ -36,7 +35,6 @@ Each with:
 ### Deliverable:
 - 3 isolated microservices with separate databases and REST APIs.
 
----
 
 ## Phase 2 — Asynchronous Communication
 
@@ -53,7 +51,6 @@ Decouple services with message brokers.
 ### Deliverable:
 - Event-driven order-payment flow using Service Bus or Kafka.
 
----
 
 ## Phase 3 — Infrastructure & Deployment
 
@@ -69,7 +66,6 @@ Containerize and deploy to Azure.
 ### Deliverable:
 - Microservices running in Azure Containers with event communication.
 
----
 
 ## Phase 4 — Security & Configuration
 
@@ -85,7 +81,6 @@ Secure APIs, secrets, and configs.
 ### Deliverable:
 - Secure APIs and centralized configuration setup.
 
----
 
 ## Phase 5 — Observability & Monitoring
 
@@ -101,7 +96,6 @@ Implement logs, metrics, and tracing.
 ### Deliverable:
 - Centralized logs, metrics dashboards, and distributed traces.
 
----
 
 ## Phase 6 — CI/CD & Scaling
 
@@ -117,36 +111,35 @@ Automate build and deploy processes.
 ### Deliverable:
 - Automated deployment pipeline and scalable microservices.
 
----
 
 ## Mermaid Architecture Diagram
 
 ```mermaid
 flowchart TD
-    subgraph Client["🌐 Client Layer"]
+    subgraph Client["Client Layer"]
         UI[Frontend / Mobile / Partner API]
     end
 
-    subgraph Gateway["🔗 API Gateway Layer"]
+    subgraph Gateway["API Gateway Layer"]
         APIM[Azure API Management]
     end
 
-    subgraph Services["🧩 Microservices Layer"]
+    subgraph Services["Microservices Layer"]
         AUTH[Auth Service<br/>JWT / Keycloak / Entra ID]
         ORDER[Order Service<br/>REST + Events]
         PAYMENT[Payment Service<br/>Event Subscriber]
     end
 
-    subgraph Broker["📨 Message Broker"]
+    subgraph Broker["Message Broker"]
         KAFKA[(Kafka / Azure Service Bus)]
     end
 
-    subgraph Data["💾 Data Layer"]
+    subgraph Data["Data Layer"]
         SQL[(Azure SQL / Cosmos DB)]
         REDIS[(Redis Cache)]
     end
 
-    subgraph Infra["☁️ Infrastructure & Observability"]
+    subgraph Infra["Infrastructure & Observability"]
         VAULT[Azure Key Vault]
         CONFIG[Azure App Configuration]
         INSIGHTS[App Insights / Grafana]
