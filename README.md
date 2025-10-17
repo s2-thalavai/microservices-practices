@@ -49,3 +49,18 @@
 - Secure APIs with OAuth2 / Keycloak / Entra ID
 
 - Automate with GitHub Actions / Azure DevOps
+
+## 3. Azure-Specific Microservices Stack
+
+| Layer          | Azure Service                                        |
+| -------------- | ---------------------------------------------------- |
+| Compute        | Azure Functions / App Service / Container Apps / AKS |
+| Messaging      | Azure Service Bus / Event Hubs / Event Grid          |
+| API Management | Azure API Management                                 |
+| Config         | Azure App Configuration / Key Vault                  |
+| Observability  | Azure Monitor / Application Insights                 |
+| Identity       | Entra ID / Keycloak (self-hosted)                    |
+
+
+
+
