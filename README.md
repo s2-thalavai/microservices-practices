@@ -49,7 +49,3 @@
 - Secure APIs with OAuth2 / Keycloak / Entra ID
 
 - Automate with GitHub Actions / Azure DevOps
-
-Secure APIs with OAuth2 / Keycloak / Entra ID
-
-Automate with GitHub Actions / Azure DevOps
