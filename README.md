@@ -14,7 +14,7 @@
 
 ### Phase 1 — Core Service Setup
 
-- Choose stack (Node.js, Java Spring Boot, Python FastAPI, .NET)
+- Choose stack (Node.js, Java Spring Boot, Python FastAPI)
 
 - Create independent modules (auth, order, payment, etc.)
 
